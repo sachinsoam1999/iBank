@@ -7,7 +7,6 @@ import com.twilio.type.PhoneNumber;
 
 public class MessageSender {
 
-	
 	private static final String ACCOUNT_SID = System.getenv("TWILIO_ACCOUNT_SID");
 	private static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
 
