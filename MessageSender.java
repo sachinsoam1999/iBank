@@ -6,8 +6,10 @@ import com.twilio.type.PhoneNumber;
 
 
 public class MessageSender {
-	private static final String ACCOUNT_SID = "AC1aad40b0e7226dd3d597bf16e7376003";
-	private static final String AUTH_TOKEN = "ae8411ccffccf65c678a3790e53386f5";
+
+	
+	private static final String ACCOUNT_SID = System.getenv("TWILIO_ACCOUNT_SID");
+	private static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
 
 	public String send(String phone_num, String msg){
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
